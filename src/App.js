@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+
 import './App.css';
+import './index.js'
+import NavbarComponents from './components/NavbarComponents';
+import Inicio from './components/Inicio';
+import Galeria from './components/Galeria';
+import Contact from './components/Contact';
+import About from './components/About';
+import { useState } from 'react';
 
 function App() {
+  const [selected, setSelected] = useState('Inicio');
+  const renderContent = () => {
+    switch (selected) {
+      case 'Inicio':
+        return <Inicio />;
+
+      case 'Galeria':
+        return <Galeria />;
+
+      case 'About':
+        return <About />;
+
+      case 'Contact':
+        return <Contact />;
+
+      default:
+        return <Inicio />;
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavbarComponents onSelect={setSelected} />
+      <div className='info_table'>
+        {renderContent()}
+      </div>
+    </>
   );
 }
 
-export default App;
+export default App; 
