@@ -1,11 +1,11 @@
 import React from 'react'
 
-function About({ active }) {
+function Home({ active }) {
   return (
     <div className={`${active}`}>
-      <p>About</p>
+      <p>Home</p>
     </div>
   )
 }
 
-export default About
+export default Home

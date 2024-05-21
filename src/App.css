@@ -104,16 +104,42 @@ body img{
 }
 
 .navbar_menu__list button:hover:before,
-.navbar_menu__list button:hover:after {
+.navbar_menu__list button:hover:after,
+.navbar_menu__list button.active:before,
+.navbar_menu__list button.active:after {
     width: 50%;
 }
 
 
-.info_table{
-
-    border: 1px solid red;
+.info_content_table{
     text-align: center;
     width: 50%;
-    margin: auto;
 }
 
+.info_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.info {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+  
+.active {
+    opacity: 1;
+}
+
+.footer_content{
+    border: 1px solid blue;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer{
+
+}

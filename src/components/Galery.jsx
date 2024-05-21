@@ -1,11 +1,11 @@
 import React from 'react'
 
-function About({ active }) {
+function Galery({ active }) {
   return (
     <div className={`${active}`}>
-      <p>About</p>
+      <p>Galery</p>
     </div>
   )
 }
 
-export default About
+export default Galery;
