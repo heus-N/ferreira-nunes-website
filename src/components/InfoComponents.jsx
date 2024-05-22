@@ -26,8 +26,8 @@ function InfoComponents({selected}) {
     }
   };
   return (
-    <div className='info_content'>
-      <div className='info_content_table'>
+    <div className='info__components'>
+      <div className='info__table'>
         {renderContent()}
       </div>
     </div> 

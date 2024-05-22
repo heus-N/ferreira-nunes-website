@@ -4,7 +4,7 @@ import NavbarImages from './NavbarImages';
 
 function NavbarComponents({ onSelect, selected }) {
   return (
-    <div className='navbar_components'>
+    <div className='navbar__components'>
       <NavbarImages />
       <NavbarMenu onSelect={onSelect} selected={selected} />
     </div>
