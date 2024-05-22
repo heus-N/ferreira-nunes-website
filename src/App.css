@@ -13,7 +13,6 @@ html body{
 }
 
 body img{
-    position: absolute;
     top: 0;
     z-index: -1;
     width: 100vw;
@@ -132,14 +131,37 @@ body img{
     opacity: 1;
 }
 
-.footer_content{
-    border: 1px solid blue;
+.footer__content{
     height: 140px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.footer__socials {
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 0.75em;
 }
 
-footer{
+.footer__content img{
+    width: 32px; 
+    height: auto; 
+    transition: 0.2s ease-in-out;
+}
 
+.footer__content img:hover{
+    animation: rotateAndScale 0.6s ease-in-out;
+}
+
+@keyframes rotateAndScale{
+    70%{
+        transform: scale(1) rotate(-5deg);
+    }
+    30%{
+        transform: scale(1.1) rotate(5deg);
+
+    }
 }

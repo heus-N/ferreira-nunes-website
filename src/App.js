@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <NavbarComponents onSelect={setSelected} selected={selected}/>
-      <InfoComponents />
+      <InfoComponents selected={selected} />
       <Footer />
     </>
   );

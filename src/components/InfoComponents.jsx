@@ -1,13 +1,11 @@
 import React from 'react'
-import { useState } from 'react';
 import Home from './Home.jsx';
 import Galery from './Galery.jsx';
 import Contact from './Contact.jsx';
 import About from './About';
 
 
-function InfoComponents() {
-  const [selected] = useState('Home');
+function InfoComponents({selected}) {
 
   const renderContent = () => {
     switch (selected) {

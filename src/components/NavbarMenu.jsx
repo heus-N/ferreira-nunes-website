@@ -12,7 +12,7 @@ function NavbarMenu({ onSelect, selected }) {
         </ul>
       </nav>
     </div>
-  )
+  );
 }
 
 export default NavbarMenu;
