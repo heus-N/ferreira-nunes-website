@@ -66,6 +66,7 @@ body img{
 
 
 .menu__list button {
+    letter-spacing: 0.75em;
     cursor: pointer;
     font-family: "Jura", sans-serif;
     border: none;
@@ -119,7 +120,7 @@ body img{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 500px;
 }
 
 .info {
@@ -132,7 +133,9 @@ body img{
 }
 
 .footer__content{
-    height: 140px;
+    letter-spacing: 0.25em;
+    text-transform: lowercase;
+    height: 40px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -164,4 +167,10 @@ body img{
         transform: scale(1.1) rotate(5deg);
 
     }
+}
+
+.slide-item{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
